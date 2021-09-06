@@ -1,0 +1,14 @@
+{
+  "diagnostic.enableMessage": "jump",
+  "clangd.semanticHighlighting": false,
+  "clangd.compilationDatabasePath": null,
+  "python.analysis.stubPath": "",
+  "python.analysis.extraPaths": ["~/.local/lib/python3.8/site-packages"],
+  "python.jediEnabled": true,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.hintSignColumn": false,
+  "diagnostic.enableSign": false,
+  "diagnostic.enable": false,
+  "python.pythonPath": "/usr/bin/python3.8",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
+}
