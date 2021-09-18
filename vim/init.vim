@@ -109,8 +109,11 @@ let b:deoplete_disable_auto_complete = 1
 source $HOME/.config/nvim/liuchengxu-vista.vim
 set nowrap
 
-" PLUGIN: FZF
+" edit or reload $MYVIMRC(this config file)
+nnoremap <silent> <leader>c :e $MYVIMRC<CR>
+nnoremap <silent> <leader>r :source $MYVIMRC<CR>
 
+" PLUGIN: FZF
 nnoremap <silent> <Leader>b :Buffers<CR>
 " nnoremap <silent> <C-f> :Files<CR>
 nnoremap <silent> <Leader>f :Rg<CR>
