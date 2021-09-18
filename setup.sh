@@ -19,4 +19,12 @@ curl -sL install-node.now.sh | sudo bash
 sudo apt install -y silversearcher-ag
 sudo apt install -y fzf
 sudo apt install -y clangd
+if [ ! -d ~/.config/nvim/ ]; then
+  mkdir ~/.config/nvim
+fi
 cp -a vim/* ~/.config/nvim/
+sudo pip install neovim
+cat ./shell/bashrc >> ~/.bashrc
+cp ./shell/tmux.conf ~/
+
+echo "Run source ./shell/bashrc then open vim and run :PlugInstall"

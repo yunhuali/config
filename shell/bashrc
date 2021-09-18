@@ -1,4 +1,6 @@
 alias vim='nvim'
+export VISUAL=vim
+export EDITOR="$VISUAL"
 # History management
 export HISTCONTROL=ignoreboth
 export HISTSIZE=5000

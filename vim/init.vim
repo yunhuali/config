@@ -4,7 +4,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ajh17/vimcompletesme'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
-" fzf#install() 确保你安装了最新的 fzf
+" fzf#install()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
@@ -16,13 +16,26 @@ Plug 'tomasr/molokai'
 Plug 'Lokaltog/vim-powerline'
 " C++ STL 
 Plug 'octol/vim-cpp-enhanced-highlight'
+
 " block comment
 Plug 'preservim/nerdcommenter'
-"Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 Plug 'liuchengxu/vista.vim'
 " ros
 " Plug 'taketwo/vim-ros'
 call plug#end()
+
+" Vim预置有很多快捷键，再加上各类插件的快捷键，大量快捷键出现在单层空间中难免引起冲突。
+" 为缓解该问题，而引入了前缀键<leader>。
+let mapleader = "\<space>"
+
+" nerdcommenter setting
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 
 if executable('clangd')
     augroup lsp_clangd
@@ -38,8 +51,6 @@ if executable('clangd')
         autocmd FileType objcpp setlocal omnifunc=lsp#complete
     augroup end
 endif
-
-let mapleader = "\<space>"
 
 " 开启文件类型侦测
 filetype on
@@ -60,7 +71,7 @@ nmap <silent> rn <Plug>(coc-rename)
 nnoremap <silent> gh :CocCommand clangd.switchSourceHeader<CR>
 
 " https://stackoverflow.com/questions/65415516/how-to-manuallywithout-keybindings-search-a-symbol-in-a-source-code-using-coc
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+nnoremap <silent><nowait> <Leader>s  :<C-u>CocList -I symbols<cr>
 
 " 关闭兼容模式
 set nocompatible
@@ -99,9 +110,6 @@ source $HOME/.config/nvim/liuchengxu-vista.vim
 set nowrap
 
 " PLUGIN: FZF
-" Vim预置有很多快捷键，再加上各类插件的快捷键，大量快捷键出现在单层空间中难免引起冲突。
-" 为缓解该问题，而引入了前缀键<leader>。
-let mapleader = "\<space>"
 
 nnoremap <silent> <Leader>b :Buffers<CR>
 " nnoremap <silent> <C-f> :Files<CR>
