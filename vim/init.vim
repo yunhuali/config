@@ -20,7 +20,14 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 " block comment
 Plug 'preservim/nerdcommenter'
 Plug 'Valloric/YouCompleteMe'
-Plug 'liuchengxu/vista.vim'
+
+"Plug 'liuchengxu/vista.vim'
+" vim-airline
+" Enhanced statusline
+" https://github.com/vim-airline/vim-airline
+Plug 'vim-airline/vim-airline'
+" https://github.com/vim-airline/vim-airline-themes
+Plug 'vim-airline/vim-airline-themes'
 " ros
 " Plug 'taketwo/vim-ros'
 call plug#end()
@@ -106,7 +113,7 @@ set nofoldenable
 
 let g:python3_host_prog = '/usr/bin/python3.8'
 let b:deoplete_disable_auto_complete = 1
-source $HOME/.config/nvim/liuchengxu-vista.vim
+" source $HOME/.config/nvim/liuchengxu-vista.vim
 set nowrap
 
 " edit or reload $MYVIMRC(this config file)
