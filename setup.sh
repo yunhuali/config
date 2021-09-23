@@ -28,3 +28,4 @@ cat ./shell/bashrc >> ~/.bashrc
 cp ./shell/tmux.conf ~/
 
 echo "Run source ./shell/bashrc then open vim and run :PlugInstall"
+echo "then cd $HOME/.vim/plugged/YouCompleteMe; python3 ./install.py"

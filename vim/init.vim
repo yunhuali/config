@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'deoplete-plugins/deoplete-clang'
-Plug 'ajh17/vimcompletesme'
+" Plug 'ajh17/vimcompletesme'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
 " fzf#install()
@@ -112,7 +112,7 @@ set foldmethod=syntax
 set nofoldenable
 
 let g:python3_host_prog = '/usr/bin/python3.8'
-let b:deoplete_disable_auto_complete = 1
+" let b:deoplete_disable_auto_complete = 1
 " source $HOME/.config/nvim/liuchengxu-vista.vim
 set nowrap
 
