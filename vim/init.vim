@@ -3,7 +3,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'deoplete-plugins/deoplete-clang'
 " Plug 'ajh17/vimcompletesme'
 Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+" Plug 'prabirshrestha/vim-lsp'
 " fzf#install()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -19,7 +19,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 
 " block comment
 Plug 'preservim/nerdcommenter'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 
 "Plug 'liuchengxu/vista.vim'
 " vim-airline
@@ -44,20 +44,20 @@ let g:NERDCompactSexyComs = 1
 " Add your own custom formats or override the defaults
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 
-if executable('clangd')
-    augroup lsp_clangd
-        autocmd!
-        autocmd User lsp_setup call lsp#register_server({
-                    \ 'name': 'clangd',
-                    \ 'cmd': {server_info->['clangd']},
-                    \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
-                    \ })
-        autocmd FileType c setlocal omnifunc=lsp#complete
-        autocmd FileType cpp setlocal omnifunc=lsp#complete
-        autocmd FileType objc setlocal omnifunc=lsp#complete
-        autocmd FileType objcpp setlocal omnifunc=lsp#complete
-    augroup end
-endif
+" if executable('clangd')
+    " augroup lsp_clangd
+        " autocmd!
+        " autocmd User lsp_setup call lsp#register_server({
+                    " \ 'name': 'clangd',
+                    " \ 'cmd': {server_info->['clangd']},
+                    " \ 'whitelist': ['c', 'cpp', 'objc', 'objcpp'],
+                    " \ })
+        " autocmd FileType c setlocal omnifunc=lsp#complete
+        " autocmd FileType cpp setlocal omnifunc=lsp#complete
+        " autocmd FileType objc setlocal omnifunc=lsp#complete
+        " autocmd FileType objcpp setlocal omnifunc=lsp#complete
+    " augroup end
+" endif
 
 " 开启文件类型侦测
 filetype on
