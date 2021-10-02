@@ -11,4 +11,9 @@
   "diagnostic.enable": false,
   "python.pythonPath": "/usr/bin/python3.8",
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
+  // codelens
+  // "codeLens.enable": true,
+  // "java.referencesCodeLens.enabled": true,
+  // "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar",
+  // "java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar -Xbootclasspath/a:/usr/local/share/lombok/lombok.jar", // for older versions of Java
 }
