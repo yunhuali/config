@@ -21,7 +21,6 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'preservim/nerdcommenter'
 " Plug 'Valloric/YouCompleteMe'
 
-"Plug 'liuchengxu/vista.vim'
 " vim-airline
 " Enhanced statusline
 " https://github.com/vim-airline/vim-airline
@@ -69,12 +68,8 @@ set background=dark
 colorscheme gruvbox
 " colorscheme molokai
 
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gy <Plug>(coc-type-definition)
-" 符号重命名
-nmap <silent> rn <Plug>(coc-rename)
+
+source $HOME/.config/nvim/coc.vim
 nnoremap <silent> gh :CocCommand clangd.switchSourceHeader<CR>
 
 " https://stackoverflow.com/questions/65415516/how-to-manuallywithout-keybindings-search-a-symbol-in-a-source-code-using-coc
@@ -112,8 +107,6 @@ set foldmethod=syntax
 set nofoldenable
 
 let g:python3_host_prog = '/usr/bin/python3.8'
-" let b:deoplete_disable_auto_complete = 1
-" source $HOME/.config/nvim/liuchengxu-vista.vim
 set nowrap
 
 " edit or reload $MYVIMRC(this config file)

@@ -36,7 +36,7 @@ done
 cp ./shell/tmux.conf ~/
 
 nvim +'PlugInstall' +qall
-(cd $HOME/.vim/plugged/YouCompleteMe; python3 ./install.py)
+# (cd $HOME/.vim/plugged/YouCompleteMe; python3 ./install.py)
 
 # for java
 # nvim +'CocInstall coc-java' +qall
