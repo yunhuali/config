@@ -33,7 +33,7 @@ for one in $all; do
         echo $one >> ~/.bashrc
     fi
 done
-cp ./shell/tmux.conf ~/
+cp ./shell/tmux.conf ~/.tmux.conf
 
 nvim +'PlugInstall' +qall
 # (cd $HOME/.vim/plugged/YouCompleteMe; python3 ./install.py)
@@ -41,9 +41,9 @@ nvim +'PlugInstall' +qall
 # for java
 # nvim +'CocInstall coc-java' +qall
 # sudo mkdir /usr/local/share/lombok
-# sudo wget https://projectlombok.org/downloads/lombok.jar -O /usr/local/share/lombok/lombok.jar
+# sudo wget https://projectlombok.org/downloads/lombok.jar -o /usr/local/share/lombok/lombok.jar
 # ( cd ~/.config/coc/extensions/coc-java-data/server; \
-#    wget https://download.eclipse.org/jdtls/milestones/0.57.0/jdt-language-server-0.57.0-202006172108.tar.gz \
+#    wget https://download.eclipse.org/jdtls/milestones/0.57.0/jdt-language-server-0.57.0-202006172108.tar.gz; \
 #    tar xvf jdt-language-server-0.57.0-202006172108.tar.gz )
 
 # echo "Run source ./shell/bashrc then open vim and run :PlugInstall"
