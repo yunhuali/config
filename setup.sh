@@ -23,6 +23,9 @@ fi
 cp -a vim/* ~/.config/nvim/
 sudo pip install neovim
 
+sudo add-apt-repository ppa:aslatter/ppa
+sudo apt install alacritty
+
 # cat ./shell/bashrc >> ~/.bashrc
 IFS=$'\n'
 all=$(cat shell/bashrc)
